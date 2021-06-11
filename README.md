@@ -9,5 +9,6 @@ Once the best shift value is found, only the rows (periods) where correlation br
 
 After all the corr markets have been scanned, their Series are used as columns in a Dataframe. From there, I take the average of each to end up with a Dataframe consisting of 2 columns: normalized Close of the base instrument, and the normalized Close of the corr markets. The latter gives me a synthetic index which I can use to evaluate the base instrument.  I don't technically need to save the normalized Close of the base instrument, but I do this so I can easily check the final correlation score of the sythentic index.
 
-The image below shows a synthetic index (overlayed as the green line) on a USD chart, which is itself a synthetic index created from another repo.
-![USD_H8](https://user-images.githubusercontent.com/62268115/121256188-ea23b380-c871-11eb-9052-bbaffb56f3e0.png)
+The image below shows a synthetic index overlayed as the blue line
+![Screenshot from 2021-06-11 16-37-55](https://user-images.githubusercontent.com/62268115/121751350-8d273800-cad3-11eb-9c96-67d79f85c121.png)
+
